@@ -1,7 +1,15 @@
 /*-----------------------------------
 * common css
 ------------------------------------*/
-@import url('https://fonts.font.im/css?family=Raleway:300,400,500,600,800,900&subset=latin-ext');
+// @import url('https://fonts.font.im/css?family=Raleway:300,400,500,600,800');
+@font-face{
+    font-family: "Raleway"，sans-serif;
+    src: url("./font/Raleway-Regular.ttf"),
+    url("./font/Raleway-SemiBold.ttf"),
+    url("./font/Raleway-Light.ttf"),
+    url("./font/Raleway-Medium.ttf"),
+    url("./font/Raleway-Bold.ttf");
+  }
 
 $main-color: #ff7684;
 $high-color: #ff7684;
