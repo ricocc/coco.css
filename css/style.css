@@ -86,6 +86,7 @@ textarea {
   background-color: transparent;
   border-radius: 4px;
   font-family: "Raleway", "Microsoft YaHei", sans-serif;
+  letter-spacing: 1px;
 }
 
 .btn:focus,
@@ -132,7 +133,10 @@ textarea {
 * main css
 ------------------------------------*/
 .header {
-  padding: 48px 0;
+  width: 100%;
+  padding: 48px 5%;
+  margin: 0 auto;
+  position: relative;
   background: #cce9ff;
   background-image: -moz-linear-gradient(-30deg, rgba(0, 222, 214, 0.7) 10%, rgba(62, 190, 245, 0.5) 45%, rgba(170, 135, 255, 0.6) 120%);
   background-image: -webkit-linear-gradient(-30deg, rgba(0, 222, 214, 0.7) 10%, rgba(62, 190, 245, 0.5) 45%, rgba(170, 135, 255, 0.6) 120%);
@@ -140,6 +144,20 @@ textarea {
   display: block;
   text-align: center;
   color: #fff;
+}
+
+.header .fold-up {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  color: #fff;
+  opacity: 0.85;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  cursor: pointer;
+  letter-spacing: 1px;
+  display: none;
 }
 
 .title {
@@ -205,7 +223,7 @@ a.download-btn:hover, .download-btn:hover {
 }
 
 .main {
-  padding: 40px 0 0;
+  padding: 40px 0 40px;
 }
 
 .coco-box {
@@ -239,7 +257,7 @@ a.download-btn:hover, .download-btn:hover {
 }
 
 .select-box {
-  background-image: url(./images/drop-down.svg), none;
+  background-image: url(../images/drop-down.svg), none;
   background-repeat: no-repeat;
   background-size: 1.5rem 1rem;
   background-position: right center;
@@ -271,4 +289,45 @@ a.download-btn:hover, .download-btn:hover {
 
 .meta a {
   text-decoration: underline;
+}
+
+/*-----------------------------------
+* response
+------------------------------------*/
+@media (max-width: 440px) {
+  .header {
+    padding: 2rem 5%;
+  }
+  .title {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+  .title .version {
+    font-size: 0.875rem;
+  }
+  .text {
+    font-size: 0.875rem;
+    margin: .75rem auto 1.25rem;
+  }
+  .main {
+    padding: 0 0 2.5rem;
+  }
+  .btn {
+    display: block;
+    margin: 1.25rem auto 0;
+    width: 180px;
+    font-size: 1rem;
+  }
+  .download {
+    margin-bottom: 0;
+  }
+  .coco-box {
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 14px;
+  }
 }
