@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Coco - CSS 动画库</title>
+    <meta name="description" content="Coco CSS, 动画库,CSS3,HTML5,Rico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="动画,免费,Coco,CSS3,CSS, animation, library, free, Rico, css animation library">
+    
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/coco.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container cleafix">
+            <div class="header color-bg full-width fix-bottom coco-ani popInTop">
+                <div class="title coco-ani">
+                   COCO.css
+                   <div class="version">
+                    v 1.0.0
+                   </div>
+                </div>
+                <div class="text">COCO.CSS是一个免费的CSS3动画库，基于自身使用而创建，可以免费使用。</div>
+                <a href="http://ricocc.com/coco.css/css/coco.min.css" class="button download-btn coco-ani">下载 coco.min.css</a>
+            </div>
+            <div class="main">
+                <div class="ani-box">
+                    <div class="coco-box coco-ani animationObject popInTop" id="obj" >
+                        <div class="key-name">
+                            C
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-box coco-ani popInTop">
+                    <!-- <div class="input-group-btn coco-ani">
+                        <button type="button" class="btn btn-primary changeOpt" data-value="prev"><span class="oi oi-caret-top"></span></button>
+                        <button type="button" class="btn btn-primary changeOpt" data-value="next"><span class="oi oi-caret-bottom"></span></button>
+                    </div> -->
+                    <select class="form-control input selectAnimation select-box " id="anims">
+
+                        <optgroup label="One-off Animations">
+                            <option value="ball">ball</option>
+                            <option value="pulsate">pulsate</option>
+                            <option value="blink">blink</option>
+                            <option value="hitLeft">hitLeft</option>
+                            <option value="hitRight">hitRight</option>
+                            <option value="shake">shake</option>
+                        </optgroup>
+        
+                        <optgroup label="Pop Enter Animations">
+                            <option value="popIn">popIn</option>
+                            <option value="popInLeft">popInLeft</option>
+                            <option value="popInRight">popInRight</option>
+                            <option value="popInTop">popInTop</option>
+                            <option value="popInBottom">popInBottom</option>
+                        </optgroup>
+        
+                        <optgroup label="Pop Exit Animations">
+                            <option value="popOut">popOut</option>
+                            <option value="popOutLeft">popOutLeft</option>
+                            <option value="popOutRight">popOutRight</option>
+                            <option value="popOutTop">popOutTop</option>
+                            <option value="popOutBottom">popOutBottom</option>
+                        </optgroup>
+        
+                        <optgroup label="Flip Animations">
+                            <option value="flip">flip</option>
+                            <option value="flipInX">flipInX</option>
+                            <option value="flipInY">flipInY</option>
+                            <option value="flipOutX">flipOutX</option>
+                            <option value="flipOutY">flipOutY</option>
+                        </optgroup>
+        
+                        <optgroup label="Jump Animations">
+                            <option value="jumpInLeft">jumpInLeft</option>
+                            <option value="jumpInRight">jumpInRight</option>
+                            <option value="jumpOutLeft">jumpOutLeft</option>
+                            <option value="jumpOutRight">jumpOutRight</option>
+                        </optgroup>
+        
+                        <optgroup label="Swoop Enter Animations">
+                            <option value="swoopInLeft">swoopInLeft</option>
+                            <option value="swoopInRight">swoopInRight</option>
+                            <option value="swoopInTop">swoopInTop</option>
+                            <option value="swoopInBottom">swoopInBottom</option>
+                        </optgroup>
+        
+                        <optgroup label="Swoop Exit Animations">
+                            <option value="swoopOutLeft">swoopOutLeft</option>
+                            <option value="swoopOutRight">swoopOutRight</option>
+                            <option value="swoopOutTop">swoopOutTop</option>
+                            <option value="swoopOutBottom">swoopOutBottom</option>
+                        </optgroup>
+        
+                        <optgroup label="Drive Enter Animations">
+                            <option value="driveInLeft">driveInLeft</option>
+                            <option value="driveInRight">driveInRight</option>
+                            <option value="driveInTop">driveInTop</option>
+                            <option value="driveInBottom">driveInBottom</option>
+                        </optgroup>
+        
+                        <optgroup label="Drive Exit Animations">
+                            <option value="driveOutBottom">driveOutBottom</option>
+                            <option value="driveOutTop">driveOutTop</option>
+                            <option value="driveOutLeft">driveOutLeft</option>
+                            <option value="driveOutRight">driveOutRight</option>
+                        </optgroup>
+        
+                        <optgroup label="Fade Enter Animations">
+                            <option value="fadeIn">fadeIn</option>
+                            <option value="fadeInLeft">fadeInLeft</option>
+                            <option value="fadeInRight">fadeInRight</option>
+                            <option value="fadeInTop">fadeInTop</option>
+                            <option value="fadeInBottom">fadeInBottom</option>
+                        </optgroup>
+        
+                        <optgroup label="Fade Exit Animations">
+                            <option value="fadeOut">fadeOut</option>
+                            <option value="fadeOutLeft">fadeOutLeft</option>
+                            <option value="fadeOutRight">fadeOutRight</option>
+                            <option value="fadeOutTop">fadeOutTop</option>
+                            <option value="fadeOutBottom">fadeOutBottom</option>
+                        </optgroup>
+        
+                        <optgroup label="Roll Enter Animations">
+                            <option value="rollInLeft">rollInLeft</option>
+                            <option value="rollInRight">rollInRight</option>
+                            <option value="rollInTop">rollInTop</option>
+                            <option value="rollInBottom">rollInBottom</option>
+                        </optgroup>
+        
+                        <optgroup label="Roll Out Animations">
+                            <option value="rollOutLeft">rollOutLeft</option>
+                            <option value="rollOutRight">rollOutRight</option>
+                            <option value="rollOutTop">rollOutTop</option>
+                            <option value="rollOutBottom">rollOutBottom</option>
+                        </optgroup>
+        
+                        <optgroup label="Spin Animations">
+                            <option value="spin">spin</option>
+                            <option value="spinIn">spinIn</option>
+                            <option value="spinOut">spinOut</option>
+                        </optgroup>
+        
+                        <optgroup label="Pull Animations">
+                            <option value="pullUp">pullUp</option>
+                            <option value="pullDown">pullDown</option>
+                            <option value="pullLeft">pullLeft</option>
+                            <option value="pullRight">pullRight</option>
+                        </optgroup>
+        
+                        <optgroup label="Fold Animations">
+                            <option value="fold">fold</option>
+                            <option value="unfold">unfold</option>
+                        </optgroup>
+        
+                    </select>
+        
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button" id="animate">Animate</button>
+                    </span>
+
+
+                </div>
+                <div class="download  popInTop coco-ani">
+                        <a href="http://ricocc.com/coco.css/css/coco.min.css" class="link">下载 Coco.css</a> | <a href="https://github.com/ricocc/coco.css" class="link">查看 GitHub</a> 
+                </div>
+                <div class="meta coco-ani popInTop">
+                    想了解更多，请访问 <a href="http://www.ricocc.com" target="_blank">Ricocc.com</a>
+                </div>
+ 
+
+            </div>
+        </div>
+        
+    </div>
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+</body>
+</html>
