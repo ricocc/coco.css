@@ -1,7 +1,7 @@
 /*-----------------------------------
 * common css
 ------------------------------------*/
-@import url('https://fonts.font.im/css?family=Raleway:300,400,500,600,600i,700,700i,800,900&subset=latin-ext');
+@import url('https://fonts.font.im/css?family=Raleway:300,400,500,600,800,900&subset=latin-ext');
 
 $main-color: #ff7684;
 $high-color: #ff7684;
@@ -304,7 +304,7 @@ a.download-btn,.download-btn{
     .text{font-size:0.875rem;margin: .75rem auto 1.25rem;}
     .main{ padding:0 0 2.5rem;}
     .btn{display: block;
-        margin: 1.25rem auto 0;
+        margin: 1.25rem auto 10px;
         width: 180px;
         font-size:1rem;
     }
