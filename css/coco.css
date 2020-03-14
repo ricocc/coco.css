@@ -10,6 +10,43 @@
   animation-iteration-count: infinite;
 }
 
+.heartBeat {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes heartBeat {
+  0% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1, 1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1, 1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+}
+
 .pulsate {
   -webkit-animation-name: pulsate;
   animation-name: pulsate;
